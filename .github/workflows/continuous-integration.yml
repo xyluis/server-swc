@@ -1,0 +1,42 @@
+name: Continuous Integration
+
+on:
+  push:
+  pull_request:
+
+jobs: 
+  # linting:
+    # name: Linting
+    # runs-on: ubuntu-latest
+    # steps:
+      # - name: Checkout Project
+        # uses: actions/checkout@v3
+
+      # - name: Setup Node.js
+        # uses: actions/setup-node@v3
+        # with:
+          # node-version: 18
+
+      # - name: Install packages
+        # run: npm install
+
+      # - name: Run ESlint
+        # run: npm run lint --fix=false
+
+  typechek:
+    name: Typechek
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install packages
+        run: npm install
+
+      - name: Run Typecheck
+        run: npm run typecheck
