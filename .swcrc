@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": false,
+      "decorators": true
+    },
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }, 
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    },
+    "target": "es2020",
+    "externalHelpers": false,
+    "keepClassNames": false
+  },
+  "module": {
+    "type": "commonjs",
+    "strict": true
+  },
+  "minify": false
+}
