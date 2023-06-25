@@ -1,8 +1,8 @@
-export const ContentTypes: Record<string, string> = {
-  txt: 'text/plain',
-  log: 'text/plain',
-  png: 'image/png',
-  gif: 'image/gif',
-  jpeg: 'image/jpeg',
-  jpg: 'image/jpeg',
-}
+export const ContentTypes = {
+  Txt: 'text/plain',
+  Log: 'text/plain',
+  Png: 'image/png',
+  Gif: 'image/gif',
+  Jpeg: 'image/jpeg',
+  Any: 'application/*',
+} as const
